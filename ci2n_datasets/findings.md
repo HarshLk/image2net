@@ -5,7 +5,7 @@ Date reviewed: 2026-06-02
 Repository path reviewed:
 
 ```text
-/home/harsh/Desktop/Project_Competitions/Silicon_Talks/image2net/ci2n_datasets
+ci2n_datasets
 ```
 
 Remote:
@@ -1068,4 +1068,3 @@ So an adapter may be needed before scoring local `ci2n` outputs:
 - Use `validation/calc_ged.py` for GED scoring against generated netlists.
 - Do not confuse `device_identification/*.json` with netlists; they are LabelMe bounding-box annotations.
 - The README is useful conceptually, but actual file counts in the clone differ from the README.
-

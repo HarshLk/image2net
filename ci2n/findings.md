@@ -42,7 +42,7 @@ conda create -y -n image2net-ci2n python=3.9 pip
 Installed the repository's runtime dependency stack into that environment using the environment's `pip`, because Poetry was not installed on the machine:
 
 ```bash
-/home/harsh/miniconda3/envs/image2net-ci2n/bin/python -m pip install \
+python -m pip install \
   opencv-python==4.10.0.84 \
   scikit-image==0.24.0 \
   loguru==0.7.2 \
@@ -60,7 +60,7 @@ Installed the repository's runtime dependency stack into that environment using 
 Verification performed:
 
 ```bash
-/home/harsh/miniconda3/envs/image2net-ci2n/bin/python -m pip check
+python -m pip check
 ```
 
 Result:
@@ -87,8 +87,8 @@ urllib3 1.22
 Import-time warnings observed:
 
 - TensorFlow emitted CUDA factory registration / TensorRT warnings. These are common runtime-environment warnings and did not prevent import.
-- Matplotlib could not write to `/home/harsh/.config/matplotlib` and used a temporary cache under `/tmp`.
-- Ultralytics could not write to `/home/harsh/.config/Ultralytics` and defaulted to `/tmp` or CWD.
+- Matplotlib could not write to the user's default Matplotlib config directory and used a temporary cache under `/tmp`.
+- Ultralytics could not write to the user's default Ultralytics config directory and defaulted to `/tmp` or CWD.
 
 If needed, set writable config directories before running:
 
@@ -814,7 +814,7 @@ generated netlist + golden netlist -> graph comparison -> GED/NED
 I inspected the cloned dataset repository at:
 
 ```text
-/home/harsh/Desktop/Project_Competitions/Silicon_Talks/image2net/ci2n_datasets
+../ci2n_datasets
 ```
 
 The dataset repository has these top-level folders:
@@ -1021,7 +1021,7 @@ and the model files are real Git LFS-fetched binaries, not pointer text files.
 From the `ci2n` repository root:
 
 ```bash
-cd /home/harsh/Desktop/Project_Competitions/Silicon_Talks/ci2n
+cd ci2n
 conda activate image2net-ci2n
 mkdir -p outputs
 python run.py --path inputs/006.png --output outputs/006.json
