@@ -1,13 +1,17 @@
-# Image2Net Setup Guide
+# Image2Net
 
-This guide sets up the complete `image2net` folder, which contains:
+This repository contains the Image2Net/CI2N code, dataset repository contents, and the reference research paper for converting analog circuit diagram images into circuit netlists.
+
+It includes a complete setup guide for installing the conda environment, downloading Git LFS model weights, preparing inputs/outputs, and running CI2N inference.
+
+The complete `image2net` folder contains:
 
 ```text
 image2net/
   ci2n/
   ci2n_datasets/
   paper.pdf
-  setup.md
+  README.md
 ```
 
 The executable CI2N code is inside `ci2n/`. The dataset material is inside `ci2n_datasets/`.
