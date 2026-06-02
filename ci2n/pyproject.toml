@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "ci2n"
+version = "0.1.0"
+description = "circuit image to netlist"
+authors = ["LAD021"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+opencv-python = "^4.10.0.84"
+scikit-image = "^0.24.0"
+loguru = "^0.7.2"
+pydantic = "^2.9.1"
+torch = "^2.4.1"
+torchvision = "^0.19.1"
+tensorflow = "^2.17.0"
+keras = "^3.5.0"
+igraph = "^0.11.6"
+ultralytics = "^8.2.76"
+fire = "^0.6.0"
+urllib3 = "1.22"
+
+
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+priority = "primary"
+
+
+[[tool.poetry.source]]
+name = "torch"
+url = "https://download.pytorch.org/whl/cu124/"
+priority = "supplemental"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

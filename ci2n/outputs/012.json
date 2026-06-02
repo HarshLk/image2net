@@ -1,0 +1,48 @@
+[
+    {
+        "component_type": "resistor2",
+        "port_connection": {}
+    },
+    {
+        "component_type": "resistor2",
+        "port_connection": {}
+    },
+    {
+        "component_type": "resistor2",
+        "port_connection": {}
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "a"
+        }
+    },
+    {
+        "component_type": "resistor2",
+        "port_connection": {}
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {}
+    },
+    {
+        "component_type": "port",
+        "port_connection": {}
+    },
+    {
+        "component_type": "port",
+        "port_connection": {}
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "a"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "a"
+        }
+    }
+]
