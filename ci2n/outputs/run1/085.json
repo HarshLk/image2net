@@ -1,0 +1,41 @@
+[
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds2": "a",
+            "ds1": "a"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {}
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "a"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {}
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "a"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "a"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "a"
+        }
+    }
+]

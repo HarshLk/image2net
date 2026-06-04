@@ -1,0 +1,48 @@
+[
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds1": "a",
+            "g": "a",
+            "ds2": "d"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "g": "a",
+            "ds1": "b",
+            "ds2": "c"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "g": "a",
+            "ds2": "a",
+            "ds1": "b"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "a"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {}
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "d"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "c"
+        }
+    }
+]

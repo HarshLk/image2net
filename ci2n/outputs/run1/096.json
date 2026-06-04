@@ -1,0 +1,20 @@
+[
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "a"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "a"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "a"
+        }
+    }
+]

@@ -1,0 +1,113 @@
+{
+    "ckt_netlist": [
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Drain": "d",
+                "Gate": "d",
+                "Source": "d"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Source": "GND",
+                "Drain": "d",
+                "Gate": "e"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Source": "g",
+                "Drain": "g",
+                "Gate": "g"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Gate": "a",
+                "Drain": "g",
+                "Source": "g"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Drain": "a",
+                "Gate": "a",
+                "Source": "g"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Drain": "c",
+                "Gate": "g",
+                "Source": "g"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Source": "a",
+                "Drain": "d",
+                "Gate": "g"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Drain": "d",
+                "Gate": "f",
+                "Source": "g"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Gate": "b",
+                "Drain": "c",
+                "Source": "d"
+            }
+        },
+        {
+            "component_type": "Cap",
+            "port_connection": {
+                "Pos": "GND",
+                "Neg": "g"
+            }
+        },
+        {
+            "component_type": "Cap",
+            "port_connection": {
+                "Pos": "GND",
+                "Neg": "c"
+            }
+        },
+        {
+            "component_type": "Cap",
+            "port_connection": {
+                "Pos": "GND",
+                "Neg": "g"
+            }
+        },
+        {
+            "component_type": "Cap",
+            "port_connection": {
+                "Neg": "a",
+                "Pos": "GND"
+            }
+        },
+        {
+            "component_type": "Diso_amp",
+            "port_connection": {
+                "Out": "a",
+                "InN": "d",
+                "InP": "floating_single_end_amp_24_InP"
+            }
+        }
+    ],
+    "ckt_type": ""
+}

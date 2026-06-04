@@ -1,0 +1,21 @@
+{
+    "ckt_netlist": [
+        {
+            "component_type": "Diso_amp",
+            "port_connection": {
+                "InN": "a",
+                "InP": "GND",
+                "Out": "b"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Gate": "a",
+                "Source": "GND",
+                "Drain": "floating_pmos_1_Drain"
+            }
+        }
+    ],
+    "ckt_type": ""
+}

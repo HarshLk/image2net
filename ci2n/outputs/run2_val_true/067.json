@@ -1,0 +1,85 @@
+{
+    "ckt_netlist": [
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Gate": "f",
+                "Drain": "i",
+                "Source": "l"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Drain": "c",
+                "Source": "GND",
+                "Gate": "k"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Source": "c",
+                "Drain": "g",
+                "Gate": "h"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Drain": "GND",
+                "Gate": "k",
+                "Source": "m"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Gate": "a",
+                "Drain": "e",
+                "Source": "g"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Gate": "b",
+                "Source": "e",
+                "Drain": "i"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Gate": "h",
+                "Source": "i",
+                "Drain": "m"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Drain": "e",
+                "Source": "GND",
+                "Gate": "j"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Gate": "d",
+                "Source": "e",
+                "Drain": "l"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Gate": "f",
+                "Source": "g",
+                "Drain": "l"
+            }
+        }
+    ],
+    "ckt_type": ""
+}

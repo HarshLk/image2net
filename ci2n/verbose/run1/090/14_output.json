@@ -1,0 +1,47 @@
+[
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds2": "b",
+            "g": "b"
+        }
+    },
+    {
+        "component_type": "current",
+        "port_connection": {}
+    },
+    {
+        "component_type": "capacitor",
+        "port_connection": {}
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds2": "a",
+            "ds1": "b",
+            "g": "c"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "b"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "c"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "a"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {}
+    }
+]

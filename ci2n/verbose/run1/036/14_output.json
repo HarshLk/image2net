@@ -1,0 +1,132 @@
+[
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds2": "c",
+            "ds1": "g",
+            "g": "i"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds1": "c",
+            "ds2": "e",
+            "g": "j"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "g": "b",
+            "ds1": "c",
+            "ds2": "i"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "g": "a",
+            "ds1": "h",
+            "ds2": "i"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "g": "d",
+            "ds2": "i",
+            "ds1": "i"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "g": "f",
+            "ds2": "h",
+            "ds1": "j"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "ds2": "e",
+            "g": "g",
+            "ds1": "h"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "ds1": "i",
+            "ds2": "j",
+            "g": "k"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "g": "a",
+            "ds1": "b",
+            "ds2": "h"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "ds1": "g",
+            "g": "g",
+            "ds2": "h"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds2": "b",
+            "g": "b",
+            "ds1": "i"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "e"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "i"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "i"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "d"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "f"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "k"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "h"
+        }
+    }
+]

@@ -1,0 +1,115 @@
+{
+    "ckt_netlist": [
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Drain": "e",
+                "Source": "f",
+                "Gate": "f"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Source": "f",
+                "Gate": "f",
+                "Drain": "f"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Gate": "b",
+                "Drain": "d",
+                "Source": "f"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Drain": "f",
+                "Gate": "f",
+                "Source": "f"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Source": "e",
+                "Gate": "e",
+                "Drain": "g"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Source": "a",
+                "Gate": "f",
+                "Drain": "g"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Gate": "d",
+                "Source": "f",
+                "Drain": "g"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Gate": "d",
+                "Drain": "d",
+                "Source": "g"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Gate": "e",
+                "Drain": "f",
+                "Source": "g"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Drain": "a",
+                "Source": "f",
+                "Gate": "f"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Gate": "c",
+                "Drain": "f",
+                "Source": "f"
+            }
+        },
+        {
+            "component_type": "Cap",
+            "port_connection": {
+                "Neg": "a",
+                "Pos": "f"
+            }
+        },
+        {
+            "component_type": "Cap",
+            "port_connection": {
+                "Neg": "a",
+                "Pos": "GND"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Source": "f",
+                "Gate": "f",
+                "Drain": "f"
+            }
+        }
+    ],
+    "ckt_type": ""
+}

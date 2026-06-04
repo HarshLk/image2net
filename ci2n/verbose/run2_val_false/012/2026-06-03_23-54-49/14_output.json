@@ -1,0 +1,66 @@
+[
+    {
+        "component_type": "single_end_amp",
+        "port_connection": {
+            "InP": "a",
+            "Out": "a",
+            "InN": "b"
+        }
+    },
+    {
+        "component_type": "resistor2",
+        "port_connection": {
+            "Neg": "a"
+        }
+    },
+    {
+        "component_type": "resistor2",
+        "port_connection": {
+            "Neg": "b"
+        }
+    },
+    {
+        "component_type": "resistor2",
+        "port_connection": {
+            "Pos": "a"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "a"
+        }
+    },
+    {
+        "component_type": "resistor2",
+        "port_connection": {
+            "Neg": "b"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "b"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "b"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "a"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {}
+    },
+    {
+        "component_type": "port",
+        "port_connection": {}
+    }
+]

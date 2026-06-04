@@ -1,0 +1,66 @@
+[
+    {
+        "component_type": "pnp",
+        "port_connection": {}
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {}
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "g": "a",
+            "ds1": "a",
+            "ds2": "a"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "ds1": "a",
+            "g": "a",
+            "ds2": "b"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {}
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {}
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {}
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {}
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "b"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "a"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "a"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "b"
+        }
+    }
+]

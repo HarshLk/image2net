@@ -1,0 +1,87 @@
+[
+    {
+        "component_type": "single_input_single_end_amp",
+        "port_connection": {
+            "Out": "b"
+        }
+    },
+    {
+        "component_type": "capacitor",
+        "port_connection": {
+            "Neg": "b",
+            "Pos": "b"
+        }
+    },
+    {
+        "component_type": "capacitor",
+        "port_connection": {
+            "Pos": "a",
+            "Neg": "a"
+        }
+    },
+    {
+        "component_type": "capacitor",
+        "port_connection": {
+            "Pos": "c",
+            "Neg": "d"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "a"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "d"
+        }
+    },
+    {
+        "component_type": "capacitor",
+        "port_connection": {
+            "Pos": "a",
+            "Neg": "b"
+        }
+    },
+    {
+        "component_type": "capacitor",
+        "port_connection": {
+            "Pos": "a",
+            "Neg": "c"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "b"
+        }
+    },
+    {
+        "component_type": "single_input_single_end_amp",
+        "port_connection": {
+            "Out": "a",
+            "In": "c"
+        }
+    },
+    {
+        "component_type": "single_input_single_end_amp",
+        "port_connection": {
+            "Out": "b",
+            "In": "c"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "b"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "a"
+        }
+    }
+]

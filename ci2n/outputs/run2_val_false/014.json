@@ -1,0 +1,40 @@
+[
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "ds2": "a",
+            "g": "a",
+            "ds1": "d"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "g": "a",
+            "ds1": "c",
+            "ds2": "d"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Collector": "a",
+            "Emitter": "b",
+            "Base": "c"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Emitter": "b",
+            "Base": "c",
+            "Collector": "c"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "b"
+        }
+    }
+]

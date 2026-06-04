@@ -1,0 +1,56 @@
+[
+    {
+        "component_type": "single_end_amp",
+        "port_connection": {
+            "InP": "c",
+            "InN": "d",
+            "Out": "e"
+        }
+    },
+    {
+        "component_type": "current",
+        "port_connection": {
+            "Out": "c",
+            "In": "g"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "ds2": "c",
+            "g": "d",
+            "ds1": "f"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "e"
+        }
+    },
+    {
+        "component_type": "capacitor",
+        "port_connection": {
+            "Pos": "a",
+            "Neg": "c"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "g"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "a"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "b"
+        }
+    }
+]

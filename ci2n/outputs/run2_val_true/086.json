@@ -1,0 +1,91 @@
+{
+    "ckt_netlist": [
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Drain": "a",
+                "Gate": "d",
+                "Source": "GND"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Gate": "b",
+                "Source": "c",
+                "Drain": "e"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Drain": "c",
+                "Gate": "GND",
+                "Source": "floating_nmos_2_Source"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Drain": "a",
+                "Source": "c",
+                "Gate": "h"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Gate": "b",
+                "Drain": "b",
+                "Source": "e"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Gate": "c",
+                "Source": "c",
+                "Drain": "e"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Gate": "d",
+                "Drain": "d",
+                "Source": "e"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Gate": "d",
+                "Source": "d",
+                "Drain": "f"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Source": "a",
+                "Drain": "b",
+                "Gate": "g"
+            }
+        },
+        {
+            "component_type": "Cap",
+            "port_connection": {
+                "Neg": "floating_capacitor_10_Neg",
+                "Pos": "floating_capacitor_10_Pos"
+            }
+        },
+        {
+            "component_type": "Cap",
+            "port_connection": {
+                "Neg": "c",
+                "Pos": "floating_capacitor_11_Pos"
+            }
+        }
+    ],
+    "ckt_type": ""
+}

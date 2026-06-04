@@ -1,0 +1,93 @@
+[
+    {
+        "component_type": "diff_amp",
+        "port_connection": {
+            "InP": "c",
+            "OutN": "f",
+            "OutP": "g",
+            "InN": "h"
+        }
+    },
+    {
+        "component_type": "capacitor",
+        "port_connection": {
+            "Pos": "a",
+            "Neg": "c"
+        }
+    },
+    {
+        "component_type": "capacitor",
+        "port_connection": {
+            "Neg": "c",
+            "Pos": "h"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "b"
+        }
+    },
+    {
+        "component_type": "capacitor",
+        "port_connection": {
+            "Pos": "f",
+            "Neg": "g"
+        }
+    },
+    {
+        "component_type": "capacitor",
+        "port_connection": {
+            "Pos": "d",
+            "Neg": "g"
+        }
+    },
+    {
+        "component_type": "capacitor",
+        "port_connection": {
+            "Pos": "b",
+            "Neg": "h"
+        }
+    },
+    {
+        "component_type": "capacitor",
+        "port_connection": {
+            "Pos": "e",
+            "Neg": "f"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "h"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "e"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "a"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "f"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "d"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {}
+    }
+]

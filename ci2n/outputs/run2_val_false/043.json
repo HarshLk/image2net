@@ -1,0 +1,65 @@
+[
+    {
+        "component_type": "pnp",
+        "port_connection": {
+            "Base": "b",
+            "Emitter": "b",
+            "Collector": "d"
+        }
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {
+            "Base": "b",
+            "Emitter": "b",
+            "Collector": "d"
+        }
+    },
+    {
+        "component_type": "single_end_amp",
+        "port_connection": {
+            "InN": "a",
+            "Out": "d"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "g": "a",
+            "ds1": "d",
+            "ds2": "e"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "g": "a",
+            "ds2": "c",
+            "ds1": "e"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "b"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "c"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "b"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "b"
+        }
+    }
+]

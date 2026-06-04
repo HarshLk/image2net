@@ -1,0 +1,97 @@
+{
+    "ckt_netlist": [
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Drain": "d",
+                "Source": "e",
+                "Gate": "h"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Source": "a",
+                "Drain": "e",
+                "Gate": "j"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Source": "c",
+                "Gate": "c",
+                "Drain": "g"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Gate": "c",
+                "Drain": "e",
+                "Source": "g"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Source": "a",
+                "Gate": "d",
+                "Drain": "i"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Gate": "a",
+                "Source": "b",
+                "Drain": "i"
+            }
+        },
+        {
+            "component_type": "Current",
+            "port_connection": {
+                "In": "c",
+                "Out": "i"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Drain": "b",
+                "Gate": "c",
+                "Source": "g"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Gate": "d",
+                "Drain": "d",
+                "Source": "i"
+            }
+        },
+        {
+            "component_type": "Cap",
+            "port_connection": {
+                "Neg": "d",
+                "Pos": "f"
+            }
+        },
+        {
+            "component_type": "Cap",
+            "port_connection": {
+                "Neg": "b",
+                "Pos": "GND"
+            }
+        },
+        {
+            "component_type": "Cap",
+            "port_connection": {
+                "Neg": "a",
+                "Pos": "b"
+            }
+        }
+    ],
+    "ckt_type": ""
+}

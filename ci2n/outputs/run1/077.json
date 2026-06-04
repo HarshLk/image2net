@@ -1,0 +1,110 @@
+[
+    {
+        "component_type": "pnp",
+        "port_connection": {}
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {}
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {}
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {}
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {}
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {}
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {}
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {}
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {}
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {}
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {}
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {}
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {}
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {}
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {}
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {}
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {}
+    },
+    {
+        "component_type": "capacitor",
+        "port_connection": {}
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {}
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {}
+    },
+    {
+        "component_type": "port",
+        "port_connection": {}
+    },
+    {
+        "component_type": "port",
+        "port_connection": {}
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "a"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {}
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {}
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "a"
+        }
+    }
+]

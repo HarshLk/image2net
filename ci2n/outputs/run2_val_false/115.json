@@ -1,0 +1,75 @@
+[
+    {
+        "component_type": "single_end_amp",
+        "port_connection": {
+            "InP": "b",
+            "Out": "e"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "g": "a",
+            "ds1": "g"
+        }
+    },
+    {
+        "component_type": "pmos_cross",
+        "port_connection": {
+            "ds1": "a",
+            "g": "b",
+            "ds2": "e"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "g": "b",
+            "ds2": "c",
+            "ds1": "f"
+        }
+    },
+    {
+        "component_type": "diode",
+        "port_connection": {
+            "Out": "e"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "e"
+        }
+    },
+    {
+        "component_type": "diode",
+        "port_connection": {
+            "Out": "d",
+            "In": "f"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "d"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "c"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "a"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "g"
+        }
+    }
+]

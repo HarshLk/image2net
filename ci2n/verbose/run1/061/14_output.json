@@ -1,0 +1,30 @@
+[
+    {
+        "component_type": "voltage",
+        "port_connection": {}
+    },
+    {
+        "component_type": "diode",
+        "port_connection": {}
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "ds2": "a",
+            "ds1": "b",
+            "g": "b"
+        }
+    },
+    {
+        "component_type": "diode",
+        "port_connection": {}
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "ds1": "a",
+            "ds2": "b",
+            "g": "b"
+        }
+    }
+]

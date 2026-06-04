@@ -1,0 +1,181 @@
+[
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "g": "h",
+            "ds2": "o",
+            "ds1": "s"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "g": "t",
+            "ds2": "u"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds2": "c",
+            "ds1": "p"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds1": "b",
+            "g": "h",
+            "ds2": "q"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "g": "l",
+            "ds1": "q"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds2": "p",
+            "g": "r",
+            "ds1": "u"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds2": "e"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "ds2": "b",
+            "g": "i",
+            "ds1": "u"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "g": "d",
+            "ds1": "g",
+            "ds2": "s"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "ds2": "f",
+            "g": "k",
+            "ds1": "u"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds2": "a",
+            "ds1": "g"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "ds1": "f",
+            "g": "k",
+            "ds2": "u"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "g": "n",
+            "ds1": "o",
+            "ds2": "u"
+        }
+    },
+    {
+        "component_type": "diff_amp",
+        "port_connection": {
+            "InP": "d",
+            "InN": "g",
+            "OutP": "l"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds1": "c",
+            "ds2": "j",
+            "g": "m"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "t"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "b"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "o"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "a"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "e"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "r"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {}
+    },
+    {
+        "component_type": "port",
+        "port_connection": {}
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "j"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "m"
+        }
+    },
+    {
+        "component_type": "diff_amp",
+        "port_connection": {
+            "InN": "i",
+            "InP": "n",
+            "OutN": "u",
+            "OutP": "u"
+        }
+    }
+]

@@ -1,0 +1,108 @@
+[
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds2": "c",
+            "ds1": "e",
+            "g": "f"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "g": "d",
+            "ds2": "e",
+            "ds1": "g"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "ds2": "a",
+            "g": "c",
+            "ds1": "j"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "ds2": "c",
+            "g": "g",
+            "ds1": "j"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "ds1": "g",
+            "g": "g",
+            "ds2": "j"
+        }
+    },
+    {
+        "component_type": "nmos_cross",
+        "port_connection": {
+            "ds1": "e",
+            "ds2": "h",
+            "g": "i"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds1": "a",
+            "ds2": "h",
+            "g": "h"
+        }
+    },
+    {
+        "component_type": "capacitor",
+        "port_connection": {
+            "Neg": "a",
+            "Pos": "c"
+        }
+    },
+    {
+        "component_type": "capacitor",
+        "port_connection": {
+            "Neg": "a",
+            "Pos": "b"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "d"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "b"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "a"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "f"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "i"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "h"
+        }
+    }
+]

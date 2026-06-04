@@ -1,0 +1,78 @@
+{
+    "ckt_netlist": [
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Drain": "a",
+                "Gate": "d",
+                "Source": "e"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Source": "a",
+                "Drain": "a",
+                "Gate": "d"
+            }
+        },
+        {
+            "component_type": "Diso_amp",
+            "port_connection": {
+                "InP": "d",
+                "Out": "e",
+                "InN": "f"
+            }
+        },
+        {
+            "component_type": "Res",
+            "port_connection": {
+                "Neg": "a",
+                "Pos": "b"
+            }
+        },
+        {
+            "component_type": "NPN",
+            "port_connection": {
+                "Emitter": "a",
+                "Collector": "c"
+            }
+        },
+        {
+            "component_type": "Res",
+            "port_connection": {
+                "Pos": "a"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Source": "a",
+                "Gate": "d",
+                "Drain": "f"
+            }
+        },
+        {
+            "component_type": "NPN",
+            "port_connection": {
+                "Emitter": "a",
+                "Collector": "b"
+            }
+        },
+        {
+            "component_type": "NPN",
+            "port_connection": {
+                "Emitter": "a",
+                "Collector": "f"
+            }
+        },
+        {
+            "component_type": "Res",
+            "port_connection": {
+                "Pos": "c",
+                "Neg": "e"
+            }
+        }
+    ],
+    "ckt_type": "Unknown"
+}

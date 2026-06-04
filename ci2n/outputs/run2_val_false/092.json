@@ -1,0 +1,135 @@
+[
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds2": "b",
+            "ds1": "l",
+            "g": "o"
+        }
+    },
+    {
+        "component_type": "single_end_amp",
+        "port_connection": {
+            "Out": "b",
+            "InP": "k",
+            "InN": "o"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "g": "d",
+            "ds1": "h",
+            "ds2": "l"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds1": "b",
+            "g": "k",
+            "ds2": "n"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "ds1": "e",
+            "ds2": "h",
+            "g": "j"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "g": "a",
+            "ds2": "h",
+            "ds1": "n"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds2": "b",
+            "g": "i",
+            "ds1": "m"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "g": "f",
+            "ds2": "g",
+            "ds1": "m"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "ds2": "e",
+            "ds1": "h",
+            "g": "j"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds1": "b",
+            "g": "c",
+            "ds2": "m"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "n"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "c"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "f"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "l"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "i"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "g"
+        }
+    },
+    {
+        "component_type": "diff_amp",
+        "port_connection": {
+            "InP": "a",
+            "InN": "d",
+            "OutN": "h",
+            "OutP": "h"
+        }
+    },
+    {
+        "component_type": "single_end_amp",
+        "port_connection": {
+            "InP": "a",
+            "InN": "d",
+            "Out": "h"
+        }
+    }
+]

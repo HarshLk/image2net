@@ -1,0 +1,31 @@
+[
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "ds1": "b",
+            "g": "c",
+            "ds2": "c"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "ds2": "b",
+            "g": "c"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {}
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {}
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "a"
+        }
+    }
+]

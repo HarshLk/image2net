@@ -1,0 +1,194 @@
+[
+    {
+        "component_type": "pnp",
+        "port_connection": {
+            "Collector": "a",
+            "Emitter": "c",
+            "Base": "g"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Base": "c",
+            "Emitter": "c",
+            "Collector": "e"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Collector": "b",
+            "Emitter": "c",
+            "Base": "i"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Emitter": "a",
+            "Base": "a",
+            "Collector": "g"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Emitter": "c",
+            "Base": "e",
+            "Collector": "g"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Emitter": "c",
+            "Base": "e",
+            "Collector": "e"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Collector": "g",
+            "Base": "g",
+            "Emitter": "g"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Emitter": "c",
+            "Collector": "e",
+            "Base": "e"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Emitter": "c",
+            "Base": "c",
+            "Collector": "e"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Emitter": "a",
+            "Collector": "b",
+            "Base": "g"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Base": "c",
+            "Emitter": "c",
+            "Collector": "g"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Emitter": "c",
+            "Base": "c",
+            "Collector": "i"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Collector": "b",
+            "Emitter": "d",
+            "Base": "f"
+        }
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {
+            "Base": "b",
+            "Collector": "b",
+            "Emitter": "e"
+        }
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {
+            "Collector": "b",
+            "Base": "e",
+            "Emitter": "g"
+        }
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {
+            "Emitter": "b",
+            "Collector": "b",
+            "Base": "b"
+        }
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {
+            "Base": "b",
+            "Collector": "h",
+            "Emitter": "i"
+        }
+    },
+    {
+        "component_type": "capacitor",
+        "port_connection": {
+            "Pos": "e",
+            "Neg": "g"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Collector": "b",
+            "Emitter": "h"
+        }
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {
+            "Collector": "b",
+            "Emitter": "e",
+            "Base": "e"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {}
+    },
+    {
+        "component_type": "port",
+        "port_connection": {}
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "c"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "f"
+        }
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {
+            "Base": "b",
+            "Collector": "d",
+            "Emitter": "e"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "c"
+        }
+    }
+]

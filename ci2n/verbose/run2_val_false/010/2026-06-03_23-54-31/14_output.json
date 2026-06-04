@@ -1,0 +1,181 @@
+[
+    {
+        "component_type": "nmos_cross",
+        "port_connection": {
+            "ds1": "a",
+            "g": "b",
+            "ds2": "f"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds2": "a",
+            "g": "b",
+            "ds1": "f"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "g": "c",
+            "ds1": "c",
+            "ds2": "e"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "g": "a",
+            "ds2": "a",
+            "ds1": "c"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds2": "a",
+            "g": "a",
+            "ds1": "f"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "g": "c",
+            "ds1": "c",
+            "ds2": "c"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds2": "a",
+            "ds1": "e",
+            "g": "h"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "ds2": "a",
+            "ds1": "g"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "g": "a",
+            "ds1": "a",
+            "ds2": "f"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds1": "a",
+            "ds2": "c",
+            "g": "h"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds1": "a",
+            "ds2": "f",
+            "g": "f"
+        }
+    },
+    {
+        "component_type": "pmos_cross",
+        "port_connection": {
+            "ds2": "c",
+            "ds1": "c"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "g": "c",
+            "ds1": "c",
+            "ds2": "g"
+        }
+    },
+    {
+        "component_type": "capacitor",
+        "port_connection": {
+            "Neg": "a",
+            "Pos": "a"
+        }
+    },
+    {
+        "component_type": "capacitor",
+        "port_connection": {
+            "Neg": "a",
+            "Pos": "f"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "f"
+        }
+    },
+    {
+        "component_type": "nmos",
+        "port_connection": {
+            "ds1": "a",
+            "g": "a",
+            "ds2": "f"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "ds1": "a",
+            "ds2": "c",
+            "g": "i"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "ds2": "a",
+            "ds1": "c",
+            "g": "d"
+        }
+    },
+    {
+        "component_type": "pmos_cross",
+        "port_connection": {
+            "ds2": "a",
+            "ds1": "c",
+            "g": "e"
+        }
+    },
+    {
+        "component_type": "capacitor",
+        "port_connection": {
+            "Neg": "a",
+            "Pos": "f"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "b"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "i"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "d"
+        }
+    }
+]

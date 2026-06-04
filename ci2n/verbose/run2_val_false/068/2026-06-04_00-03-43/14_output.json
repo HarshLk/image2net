@@ -1,0 +1,32 @@
+[
+    {
+        "component_type": "single_end_amp",
+        "port_connection": {
+            "InN": "b",
+            "Out": "b",
+            "InP": "b"
+        }
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {
+            "Base": "a",
+            "Emitter": "a",
+            "Collector": "b"
+        }
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {
+            "Base": "a",
+            "Emitter": "a",
+            "Collector": "b"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "a"
+        }
+    }
+]

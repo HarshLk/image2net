@@ -1,0 +1,53 @@
+{
+    "ckt_netlist": [
+        {
+            "component_type": "PNP",
+            "port_connection": {
+                "Collector": "a",
+                "Base": "GND",
+                "Emitter": "GND"
+            }
+        },
+        {
+            "component_type": "PNP",
+            "port_connection": {
+                "Base": "GND",
+                "Emitter": "GND",
+                "Collector": "GND"
+            }
+        },
+        {
+            "component_type": "Diso_amp",
+            "port_connection": {
+                "Out": "a",
+                "InN": "c",
+                "InP": "floating_single_end_amp_2_InP"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Drain": "b",
+                "Gate": "GND",
+                "Source": "GND"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Drain": "a",
+                "Source": "b",
+                "Gate": "c"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Drain": "b",
+                "Source": "GND",
+                "Gate": "c"
+            }
+        }
+    ],
+    "ckt_type": ""
+}

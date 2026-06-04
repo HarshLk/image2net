@@ -1,0 +1,160 @@
+[
+    {
+        "component_type": "current",
+        "port_connection": {
+            "Out": "b",
+            "In": "c"
+        }
+    },
+    {
+        "component_type": "pmos_bulk",
+        "port_connection": {
+            "ds2": "b",
+            "g": "c",
+            "ds1": "c"
+        }
+    },
+    {
+        "component_type": "pmos_bulk",
+        "port_connection": {
+            "g": "a",
+            "ds2": "c",
+            "ds1": "c"
+        }
+    },
+    {
+        "component_type": "pmos_bulk",
+        "port_connection": {
+            "ds2": "c",
+            "ds1": "c"
+        }
+    },
+    {
+        "component_type": "pmos_bulk",
+        "port_connection": {
+            "g": "b",
+            "ds2": "b",
+            "ds1": "b"
+        }
+    },
+    {
+        "component_type": "pmos_bulk",
+        "port_connection": {
+            "ds1": "c",
+            "ds2": "c",
+            "g": "d"
+        }
+    },
+    {
+        "component_type": "pmos_bulk",
+        "port_connection": {
+            "ds2": "b",
+            "ds1": "b",
+            "g": "c"
+        }
+    },
+    {
+        "component_type": "nmos_bulk",
+        "port_connection": {
+            "ds1": "b",
+            "ds2": "c",
+            "g": "c"
+        }
+    },
+    {
+        "component_type": "nmos_bulk",
+        "port_connection": {
+            "ds2": "b",
+            "g": "c",
+            "ds1": "c"
+        }
+    },
+    {
+        "component_type": "nmos_bulk",
+        "port_connection": {
+            "ds1": "b",
+            "ds2": "c",
+            "g": "c"
+        }
+    },
+    {
+        "component_type": "nmos_bulk",
+        "port_connection": {
+            "ds2": "b",
+            "ds1": "b",
+            "g": "c"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "a"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "d"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "b"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "b"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "b"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "b"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "b"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "b"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "b"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "b"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "b"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "b"
+        }
+    }
+]

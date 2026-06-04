@@ -1,0 +1,4 @@
+GED: 10		at time: 0.238/60s
+GED: 8		at time: 0.257/60s
+GED: 4		at time: 0.413/60s
+GED_Result: 4

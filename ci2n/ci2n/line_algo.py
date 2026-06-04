@@ -12,6 +12,37 @@ import igraph as ig
 
 IMG = np.ndarray
 
+TwoTerminalTypes = {
+    Device.DeviceType.resistor2,
+    Device.DeviceType.resistor1_3,
+    Device.DeviceType.resistor2_3,
+    Device.DeviceType.capacitor,
+    Device.DeviceType.capacitor_3,
+    Device.DeviceType.inductor,
+    Device.DeviceType.inductor_3,
+    Device.DeviceType.voltage,
+    Device.DeviceType.voltage_lines,
+    Device.DeviceType.current,
+    Device.DeviceType.diode,
+    Device.DeviceType.switch,
+    Device.DeviceType.switch_3,
+}
+
+BjtTypes = {
+    Device.DeviceType.npn,
+    Device.DeviceType.pnp,
+    Device.DeviceType.npn_cross,
+    Device.DeviceType.pnp_cross,
+}
+
+AmpTypes = {
+    Device.DeviceType.single_end_amp,
+    Device.DeviceType.single_input_single_end_amp,
+    Device.DeviceType.diff_amp,
+}
+
+DirectionalTypes = MosTypes | TwoTerminalTypes | BjtTypes | AmpTypes
+
 
 def binary_the_img(img: IMG) -> IMG:
     """图片二值化"""
@@ -324,7 +355,7 @@ def get_device_direction_and_ports(img: IMG, device: Device, model):
 
     img = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
 
-    if device.device_type in MosTypes:
+    if device.device_type in DirectionalTypes:
         x1, y1 = device.top_left
         x2, y2 = device.bottom_right
 
@@ -354,7 +385,11 @@ def get_device_direction_and_ports(img: IMG, device: Device, model):
         # 将预测结果保存在device的direction属性中
         device.direction = predicted_direction
         # print(f"Device {device_name} ({device.device_type.name}) predicted direction: {predicted_direction}")
-    elif device.device_type == Device.DeviceType.gnd or device.device_type == Device.DeviceType.port:
+    elif device.device_type in {
+        Device.DeviceType.gnd,
+        Device.DeviceType.port,
+        Device.DeviceType.antenna,
+    }:
         pass
 
     else:
@@ -364,6 +399,120 @@ def get_device_direction_and_ports(img: IMG, device: Device, model):
 
 
 def get_device_ports(device: Device):
+    def add_port(name: NAME, top_left: Tuple[int, int], bottom_right: Tuple[int, int]):
+        device.ports[name] = Port(top_left=top_left, bottom_right=bottom_right)
+
+    def split_halves():
+        x1, y1 = device.top_left
+        x2, y2 = device.bottom_right
+        mid_x = (x1 + x2) // 2
+        mid_y = (y1 + y2) // 2
+
+        if device.direction in {'l', 'r'}:
+            return {
+                'first': ((x1, y1), (mid_x, y2)),
+                'second': ((mid_x, y1), (x2, y2)),
+            }
+
+        return {
+            'first': ((x1, y1), (x2, mid_y)),
+            'second': ((x1, mid_y), (x2, y2)),
+        }
+
+    def add_two_terminal_ports(first_name: NAME, second_name: NAME):
+        halves = split_halves()
+        if device.direction in {'r', 'd'}:
+            first, second = halves['first'], halves['second']
+        else:
+            first, second = halves['second'], halves['first']
+        add_port(first_name, first[0], first[1])
+        add_port(second_name, second[0], second[1])
+
+    def add_voltage_ports():
+        halves = split_halves()
+        if device.direction in {'l', 'u'}:
+            positive, negative = halves['first'], halves['second']
+        else:
+            positive, negative = halves['second'], halves['first']
+        add_port('Positive', positive[0], positive[1])
+        add_port('Negative', negative[0], negative[1])
+
+    def add_bjt_ports():
+        x1, y1 = device.top_left
+        x2, y2 = device.bottom_right
+        mid_x = (x1 + x2) // 2
+        mid_y = (y1 + y2) // 2
+
+        if device.direction == 'l':
+            add_port('Base', (x1, y1), (mid_x, y2))
+            add_port('Collector', (mid_x, y1), (x2, mid_y))
+            add_port('Emitter', (mid_x, mid_y), (x2, y2))
+        elif device.direction == 'u':
+            add_port('Base', (x1, y1), (x2, mid_y))
+            add_port('Collector', (x1, mid_y), (mid_x, y2))
+            add_port('Emitter', (mid_x, mid_y), (x2, y2))
+        elif device.direction == 'd':
+            add_port('Base', (x1, mid_y), (x2, y2))
+            add_port('Collector', (x1, y1), (mid_x, mid_y))
+            add_port('Emitter', (mid_x, y1), (x2, mid_y))
+        else:
+            add_port('Base', (mid_x, y1), (x2, y2))
+            add_port('Collector', (x1, y1), (mid_x, mid_y))
+            add_port('Emitter', (x1, mid_y), (mid_x, y2))
+
+    def add_single_input_amp_ports():
+        add_two_terminal_ports('In', 'Out')
+
+    def add_differential_input_amp_ports():
+        x1, y1 = device.top_left
+        x2, y2 = device.bottom_right
+        mid_x = (x1 + x2) // 2
+        mid_y = (y1 + y2) // 2
+
+        if device.direction == 'l':
+            add_port('Out', (x1, y1), (mid_x, y2))
+            add_port('InP', (mid_x, y1), (x2, mid_y))
+            add_port('InN', (mid_x, mid_y), (x2, y2))
+        elif device.direction == 'u':
+            add_port('Out', (x1, y1), (x2, mid_y))
+            add_port('InP', (x1, mid_y), (mid_x, y2))
+            add_port('InN', (mid_x, mid_y), (x2, y2))
+        elif device.direction == 'd':
+            add_port('InP', (x1, y1), (mid_x, mid_y))
+            add_port('InN', (mid_x, y1), (x2, mid_y))
+            add_port('Out', (x1, mid_y), (x2, y2))
+        else:
+            add_port('InP', (x1, y1), (mid_x, mid_y))
+            add_port('InN', (x1, mid_y), (mid_x, y2))
+            add_port('Out', (mid_x, y1), (x2, y2))
+
+    def add_fully_differential_amp_ports():
+        x1, y1 = device.top_left
+        x2, y2 = device.bottom_right
+        mid_x = (x1 + x2) // 2
+        mid_y = (y1 + y2) // 2
+
+        if device.direction == 'l':
+            add_port('OutP', (x1, y1), (mid_x, mid_y))
+            add_port('OutN', (x1, mid_y), (mid_x, y2))
+            add_port('InP', (mid_x, y1), (x2, mid_y))
+            add_port('InN', (mid_x, mid_y), (x2, y2))
+        elif device.direction == 'u':
+            add_port('OutP', (x1, y1), (mid_x, mid_y))
+            add_port('OutN', (mid_x, y1), (x2, mid_y))
+            add_port('InP', (x1, mid_y), (mid_x, y2))
+            add_port('InN', (mid_x, mid_y), (x2, y2))
+        elif device.direction == 'd':
+            add_port('InP', (x1, y1), (mid_x, mid_y))
+            add_port('InN', (mid_x, y1), (x2, mid_y))
+            add_port('OutP', (x1, mid_y), (mid_x, y2))
+            add_port('OutN', (mid_x, mid_y), (x2, y2))
+        else:
+            add_port('InP', (x1, y1), (mid_x, mid_y))
+            add_port('InN', (x1, mid_y), (mid_x, y2))
+            add_port('OutP', (mid_x, y1), (x2, mid_y))
+            add_port('OutN', (mid_x, mid_y), (x2, y2))
+
     # 仅处理属于 mos_types 的设备
     if device.device_type in MosTypes:
         # 获取器件框的左上角和右下角坐标
@@ -399,7 +548,45 @@ def get_device_ports(device: Device):
             device.ports['ds1'] = Port(top_left=device.top_left, bottom_right=center)
             device.ports['ds2'] = Port(top_left=top_mid, bottom_right=right_mid)
 
-    elif device.device_type == Device.DeviceType.gnd or device.device_type == Device.DeviceType.port:
+    elif device.device_type in {
+        Device.DeviceType.resistor2,
+        Device.DeviceType.resistor1_3,
+        Device.DeviceType.resistor2_3,
+        Device.DeviceType.capacitor,
+        Device.DeviceType.capacitor_3,
+        Device.DeviceType.inductor,
+        Device.DeviceType.inductor_3,
+        Device.DeviceType.switch,
+        Device.DeviceType.switch_3,
+    }:
+        add_two_terminal_ports('Pos', 'Neg')
+
+    elif device.device_type in {Device.DeviceType.voltage, Device.DeviceType.voltage_lines}:
+        add_voltage_ports()
+
+    elif device.device_type == Device.DeviceType.current:
+        add_two_terminal_ports('In', 'Out')
+
+    elif device.device_type == Device.DeviceType.diode:
+        add_two_terminal_ports('In', 'Out')
+
+    elif device.device_type in BjtTypes:
+        add_bjt_ports()
+
+    elif device.device_type == Device.DeviceType.single_input_single_end_amp:
+        add_single_input_amp_ports()
+
+    elif device.device_type == Device.DeviceType.single_end_amp:
+        add_differential_input_amp_ports()
+
+    elif device.device_type == Device.DeviceType.diff_amp:
+        add_fully_differential_amp_ports()
+
+    elif device.device_type in {
+        Device.DeviceType.gnd,
+        Device.DeviceType.port,
+        Device.DeviceType.antenna,
+    }:
         # 如果是GND或端口，端口就是本身的位置
         device.ports[device.device_type.name] = Port(
             top_left=device.top_left,
@@ -751,24 +938,128 @@ def draw_connections(img: IMG, circuit: Circuit) -> IMG:
     return new_img
 
 
-def circuit_to_json(circuit: Circuit) -> str:
-    target_json = dict()
+def circuit_to_json(circuit: Circuit, ckt_type: str = "", validation: bool = True) -> str:
+    if not validation:
+        target_json = {}
+        for name, device in circuit.devices.items():
+            target_json[name] = {
+                "component_type": device.device_type.name,
+                "port_connection": {}
+            }
 
+        for i, connection in enumerate(circuit.connections):
+            net_name = shift_num_to_char(i + 1)
+            for device_name, port_name in connection.ports:
+                if device_name not in target_json:
+                    continue
+                target_json[device_name]["port_connection"][port_name] = net_name
+
+        return json.dumps(list(target_json.values()), indent=4)
+
+    component_type_map = {
+        Device.DeviceType.pmos: "PMOS",
+        Device.DeviceType.pmos_cross: "PMOS",
+        Device.DeviceType.pmos_bulk: "PMOS",
+        Device.DeviceType.nmos: "NMOS",
+        Device.DeviceType.nmos_cross: "NMOS",
+        Device.DeviceType.nmos_bulk: "NMOS",
+        Device.DeviceType.npn: "NPN",
+        Device.DeviceType.npn_cross: "NPN",
+        Device.DeviceType.pnp: "PNP",
+        Device.DeviceType.pnp_cross: "PNP",
+        Device.DeviceType.resistor2: "Res",
+        Device.DeviceType.resistor1_3: "Res",
+        Device.DeviceType.resistor2_3: "Res",
+        Device.DeviceType.capacitor: "Cap",
+        Device.DeviceType.capacitor_3: "Cap",
+        Device.DeviceType.inductor: "Ind",
+        Device.DeviceType.inductor_3: "Ind",
+        Device.DeviceType.voltage: "Voltage",
+        Device.DeviceType.voltage_lines: "Voltage",
+        Device.DeviceType.current: "Current",
+        Device.DeviceType.diode: "Diode",
+        Device.DeviceType.switch: "Switch",
+        Device.DeviceType.switch_3: "Switch",
+        Device.DeviceType.single_end_amp: "Diso_amp",
+        Device.DeviceType.single_input_single_end_amp: "Siso_amp",
+        Device.DeviceType.diff_amp: "Dido_amp",
+    }
+
+    port_name_map = {
+        "ds1": "Drain",
+        "ds2": "Source",
+        "g": "Gate",
+        "gnd": "Port",
+        "port": "Port",
+    }
+
+    terminal_net_alias = {
+        Device.DeviceType.gnd: "GND",
+    }
+
+    required_ports = {
+        "PMOS": {"Drain", "Gate", "Source"},
+        "NMOS": {"Drain", "Gate", "Source"},
+        "NPN": {"Collector", "Base", "Emitter"},
+        "PNP": {"Collector", "Base", "Emitter"},
+        "Res": {"Pos", "Neg"},
+        "Cap": {"Pos", "Neg"},
+        "Ind": {"Pos", "Neg"},
+        "Switch": {"Pos", "Neg"},
+        "Voltage": {"Positive", "Negative"},
+        "Current": {"In", "Out"},
+        "Diode": {"In", "Out"},
+        "Diso_amp": {"InP", "InN", "Out"},
+        "Siso_amp": {"In", "Out"},
+        "Dido_amp": {"InP", "InN", "OutP", "OutN"},
+    }
+
+    target_json = {}
     for name, device in circuit.devices.items():
+        component_type = component_type_map.get(device.device_type)
+        if component_type is None:
+            continue
         target_json[name] = {
-            "component_type": device.device_type.name,
+            "component_type": component_type,
             "port_connection": {}
         }
 
-    for i, connection in enumerate(circuit.connections):
-        net_name = shift_num_to_char(i + 1)
-        ports = list(connection.ports)
+    connection_net_names = {}
+    next_net_idx = 1
+    for connection in circuit.connections:
+        alias = None
+        for device_name, _ in connection.ports:
+            device = circuit.devices.get(device_name)
+            if device is None:
+                continue
+            alias = terminal_net_alias.get(device.device_type)
+            if alias:
+                break
 
-        for port in ports:
-            device_name, port_name = port
-            target_json[device_name]["port_connection"][port_name] = net_name
+        if alias is None:
+            alias = shift_num_to_char(next_net_idx)
+            next_net_idx += 1
 
-    target_json = [
-        item for item in target_json.values()
-    ]
-    return json.dumps(target_json, indent=4)
+        connection_net_names[connection] = alias
+
+    for connection, net_name in connection_net_names.items():
+        for device_name, port_name in connection.ports:
+            if device_name not in target_json:
+                continue
+            mapped_port_name = port_name_map.get(port_name, port_name)
+            target_json[device_name]["port_connection"][mapped_port_name] = net_name
+
+    ckt_netlist = []
+    for device_name, item in target_json.items():
+        component_type = item["component_type"]
+        port_connection = item["port_connection"]
+        expected_ports = required_ports.get(component_type, set())
+        for port_name in sorted(expected_ports - set(port_connection)):
+            safe_device_name = device_name.replace(":", "_")
+            port_connection[port_name] = f"floating_{safe_device_name}_{port_name}"
+        ckt_netlist.append(item)
+
+    return json.dumps({
+        "ckt_netlist": ckt_netlist,
+        "ckt_type": ckt_type,
+    }, indent=4)

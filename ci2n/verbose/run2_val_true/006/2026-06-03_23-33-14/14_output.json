@@ -1,0 +1,82 @@
+{
+    "ckt_netlist": [
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Drain": "a",
+                "Gate": "c",
+                "Source": "e"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Drain": "a",
+                "Source": "a",
+                "Gate": "c"
+            }
+        },
+        {
+            "component_type": "Diso_amp",
+            "port_connection": {
+                "InP": "c",
+                "Out": "e",
+                "InN": "f"
+            }
+        },
+        {
+            "component_type": "Res",
+            "port_connection": {
+                "Neg": "a",
+                "Pos": "d"
+            }
+        },
+        {
+            "component_type": "NPN",
+            "port_connection": {
+                "Base": "a",
+                "Emitter": "a",
+                "Collector": "b"
+            }
+        },
+        {
+            "component_type": "Res",
+            "port_connection": {
+                "Pos": "a",
+                "Neg": "floating_resistor2_5_Neg"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Source": "a",
+                "Gate": "c",
+                "Drain": "f"
+            }
+        },
+        {
+            "component_type": "NPN",
+            "port_connection": {
+                "Base": "a",
+                "Emitter": "a",
+                "Collector": "d"
+            }
+        },
+        {
+            "component_type": "NPN",
+            "port_connection": {
+                "Base": "a",
+                "Emitter": "a",
+                "Collector": "f"
+            }
+        },
+        {
+            "component_type": "Res",
+            "port_connection": {
+                "Pos": "b",
+                "Neg": "e"
+            }
+        }
+    ],
+    "ckt_type": ""
+}

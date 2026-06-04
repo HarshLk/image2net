@@ -39,6 +39,8 @@ class Settings(BaseModel):
     item_classifier_model_path: Path
     junction_classifier_model_path: Path
     verbose_path: Path
+    ckt_type: str = ""
+    validation: bool = True
 
 
 def circuit_image_to_netlist(image: np.ndarray, settings: Settings, verbose: bool = True) -> str:
@@ -110,8 +112,9 @@ def circuit_image_to_netlist(image: np.ndarray, settings: Settings, verbose: boo
     for i, box in enumerate(results.boxes):
         xmin, ymin, xmax, ymax = map(int, box.xyxy[0])
         class_name = yolo_model.names[int(box.cls[0])]
+        normalized_class_name = class_name.lower().replace("-", "_")
 
-        device_type = class_name_to_device_type.get(class_name.lower(), None)
+        device_type = class_name_to_device_type.get(normalized_class_name, None)
         if device_type is None:
             lg.warning(f'Unknown device type {class_name} detected at {xmin, ymin, xmax, ymax}')
             continue
@@ -325,7 +328,7 @@ def circuit_image_to_netlist(image: np.ndarray, settings: Settings, verbose: boo
         cv2.imwrite(str(lg_path / filename), connections_img)
         lg.debug(f'Connections saved at {lg_path / filename}')
     # 整理输出
-    target_json = la.circuit_to_json(circuit)
+    target_json = la.circuit_to_json(circuit, ckt_type=settings.ckt_type, validation=settings.validation)
     lg.info(f'Output generated')
 
     algorithm_step += 1
@@ -348,7 +351,14 @@ def circuit_image_to_netlist_from_file(file_path: os.PathLike, settings: Setting
     return circuit_image_to_netlist(image, settings, verbose)
 
 
-def main(path: str, output: str, verbose: bool = True):
+def main(
+    path: str,
+    output: str,
+    verbose: bool = True,
+    verbose_path: str = "verbose",
+    ckt_type: str = "",
+    validation: bool = True,
+):
 
 
     # 读取图片
@@ -358,7 +368,9 @@ def main(path: str, output: str, verbose: bool = True):
             yolo_model_path=Path('./models/yolo_model.pt'),
             item_classifier_model_path=Path('./models/item_classifier.h5'),
             junction_classifier_model_path=Path('./models/junction_classifier.pt'),
-            verbose_path=Path('verbose')
+            verbose_path=Path(verbose_path),
+            ckt_type=ckt_type,
+            validation=validation,
         ),
         verbose=verbose
     )

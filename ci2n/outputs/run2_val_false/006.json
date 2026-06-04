@@ -1,0 +1,84 @@
+[
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "g": "c",
+            "ds2": "d",
+            "ds1": "f"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "g": "c",
+            "ds2": "f",
+            "ds1": "f"
+        }
+    },
+    {
+        "component_type": "single_end_amp",
+        "port_connection": {
+            "InN": "b",
+            "InP": "c",
+            "Out": "d"
+        }
+    },
+    {
+        "component_type": "resistor2",
+        "port_connection": {
+            "Pos": "e",
+            "Neg": "f"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Collector": "a",
+            "Emitter": "f",
+            "Base": "f"
+        }
+    },
+    {
+        "component_type": "resistor2",
+        "port_connection": {
+            "Pos": "f"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "ds1": "b",
+            "g": "c",
+            "ds2": "f"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Collector": "e",
+            "Emitter": "f",
+            "Base": "f"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Collector": "b",
+            "Base": "f",
+            "Emitter": "f"
+        }
+    },
+    {
+        "component_type": "resistor2",
+        "port_connection": {
+            "Pos": "a",
+            "Neg": "d"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "f"
+        }
+    }
+]

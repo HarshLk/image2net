@@ -1,0 +1,102 @@
+[
+    {
+        "component_type": "pnp",
+        "port_connection": {
+            "Base": "a",
+            "Collector": "d",
+            "Emitter": "i"
+        }
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {
+            "Emitter": "b",
+            "Collector": "d",
+            "Base": "i"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Base": "c",
+            "Emitter": "h",
+            "Collector": "i"
+        }
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {
+            "Base": "a",
+            "Collector": "d",
+            "Emitter": "k"
+        }
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {
+            "Collector": "a",
+            "Emitter": "g",
+            "Base": "k"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Emitter": "h",
+            "Base": "j",
+            "Collector": "k"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Collector": "b",
+            "Emitter": "e",
+            "Base": "h"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Emitter": "e",
+            "Base": "f",
+            "Collector": "h"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "g"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "d"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "j"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "b"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "c"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "f"
+        }
+    }
+]

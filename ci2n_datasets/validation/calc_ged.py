@@ -1,7 +1,6 @@
 import fire
 from pathlib import Path
 import shutil
-from multiprocessing import Pool
 from functools import partial
 from utils_ged import ged, HeteroGraph
 import json
@@ -42,13 +41,10 @@ def main(input_dir: str = "./input", golden_dir: str = "./golden", output_dir: s
     
     process = partial(process_one_task, input_dir=input_dir, golden_dir=golden_dir, output_dir=output_dir, timeout=timeout)
     
-    # scores = [
-    #     process(task)
-    #     for task in tasks
-    # ]
-    
-    with Pool(len(tasks)) as p:
-        scores = p.map(process, tasks)
+    scores = []
+    for index, task in enumerate(tasks, start=1):
+        print(f"Processing {index}/{len(tasks)}: {task}", flush=True)
+        scores.append(process(task))
         
     result = {
         id: score

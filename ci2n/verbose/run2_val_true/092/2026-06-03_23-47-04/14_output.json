@@ -1,0 +1,102 @@
+{
+    "ckt_netlist": [
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Gate": "b",
+                "Drain": "k",
+                "Source": "n"
+            }
+        },
+        {
+            "component_type": "Diso_amp",
+            "port_connection": {
+                "InP": "a",
+                "InN": "b",
+                "Out": "n"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Gate": "h",
+                "Drain": "i",
+                "Source": "k"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Gate": "a",
+                "Source": "g",
+                "Drain": "n"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Drain": "d",
+                "Gate": "f",
+                "Source": "i"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Drain": "g",
+                "Source": "i",
+                "Gate": "l"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Gate": "c",
+                "Drain": "m",
+                "Source": "n"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Gate": "e",
+                "Source": "GND",
+                "Drain": "m"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Source": "d",
+                "Gate": "f",
+                "Drain": "i"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Gate": "j",
+                "Source": "m",
+                "Drain": "n"
+            }
+        },
+        {
+            "component_type": "Dido_amp",
+            "port_connection": {
+                "InN": "h",
+                "OutP": "i",
+                "OutN": "i",
+                "InP": "l"
+            }
+        },
+        {
+            "component_type": "Diso_amp",
+            "port_connection": {
+                "InN": "h",
+                "Out": "i",
+                "InP": "l"
+            }
+        }
+    ],
+    "ckt_type": ""
+}

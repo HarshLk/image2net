@@ -1,0 +1,29 @@
+{
+    "ckt_netlist": [
+        {
+            "component_type": "PNP",
+            "port_connection": {
+                "Emitter": "GND",
+                "Base": "floating_pnp_0_Base",
+                "Collector": "floating_pnp_0_Collector"
+            }
+        },
+        {
+            "component_type": "Diso_amp",
+            "port_connection": {
+                "InP": "a",
+                "InN": "floating_single_end_amp_1_InN",
+                "Out": "floating_single_end_amp_1_Out"
+            }
+        },
+        {
+            "component_type": "PNP",
+            "port_connection": {
+                "Base": "floating_pnp_2_Base",
+                "Collector": "floating_pnp_2_Collector",
+                "Emitter": "floating_pnp_2_Emitter"
+            }
+        }
+    ],
+    "ckt_type": ""
+}

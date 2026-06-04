@@ -1,0 +1,36 @@
+[
+    {
+        "component_type": "pnp",
+        "port_connection": {
+            "Emitter": "a"
+        }
+    },
+    {
+        "component_type": "single_end_amp",
+        "port_connection": {
+            "InP": "b"
+        }
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {}
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "a"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {}
+    },
+    {
+        "component_type": "port",
+        "port_connection": {}
+    },
+    {
+        "component_type": "port",
+        "port_connection": {}
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "component_type": "single_end_amp",
+        "port_connection": {
+            "InN": "a",
+            "Out": "c"
+        }
+    },
+    {
+        "component_type": "voltage",
+        "port_connection": {
+            "Positive": "c",
+            "Negative": "c"
+        }
+    },
+    {
+        "component_type": "diode",
+        "port_connection": {
+            "Out": "c",
+            "In": "c"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "g": "a",
+            "ds2": "b",
+            "ds1": "c"
+        }
+    },
+    {
+        "component_type": "diode",
+        "port_connection": {
+            "Out": "c",
+            "In": "c"
+        }
+    },
+    {
+        "component_type": "pmos",
+        "port_connection": {
+            "g": "a",
+            "ds1": "b",
+            "ds2": "c"
+        }
+    }
+]

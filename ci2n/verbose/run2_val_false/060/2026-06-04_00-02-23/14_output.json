@@ -1,0 +1,109 @@
+[
+    {
+        "component_type": "pnp",
+        "port_connection": {
+            "Emitter": "b",
+            "Collector": "d",
+            "Base": "h"
+        }
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {
+            "Collector": "d",
+            "Emitter": "e",
+            "Base": "h"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Emitter": "a",
+            "Collector": "b",
+            "Base": "c"
+        }
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {
+            "Collector": "d",
+            "Base": "e",
+            "Emitter": "g"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Emitter": "a",
+            "Collector": "e",
+            "Base": "k"
+        }
+    },
+    {
+        "component_type": "pnp",
+        "port_connection": {
+            "Base": "b",
+            "Collector": "h",
+            "Emitter": "i"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Base": "j",
+            "Collector": "j"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Collector": "a",
+            "Emitter": "f",
+            "Base": "j"
+        }
+    },
+    {
+        "component_type": "npn",
+        "port_connection": {
+            "Base": "f",
+            "Emitter": "f",
+            "Collector": "g"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "j"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "d"
+        }
+    },
+    {
+        "component_type": "gnd",
+        "port_connection": {
+            "gnd": "i"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "c"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "g"
+        }
+    },
+    {
+        "component_type": "port",
+        "port_connection": {
+            "port": "k"
+        }
+    }
+]

@@ -1,0 +1,97 @@
+{
+    "ckt_netlist": [
+        {
+            "component_type": "Diso_amp",
+            "port_connection": {
+                "InN": "b",
+                "InP": "b",
+                "Out": "b"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Gate": "a",
+                "Drain": "b",
+                "Source": "c"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Gate": "b",
+                "Drain": "c",
+                "Source": "d"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Gate": "a",
+                "Source": "b",
+                "Drain": "c"
+            }
+        },
+        {
+            "component_type": "NPN",
+            "port_connection": {
+                "Emitter": "GND",
+                "Collector": "d",
+                "Base": "d"
+            }
+        },
+        {
+            "component_type": "NPN",
+            "port_connection": {
+                "Emitter": "GND",
+                "Base": "b",
+                "Collector": "b"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Source": "GND",
+                "Drain": "c",
+                "Gate": "d"
+            }
+        },
+        {
+            "component_type": "NPN",
+            "port_connection": {
+                "Emitter": "GND",
+                "Collector": "b",
+                "Base": "b"
+            }
+        },
+        {
+            "component_type": "Res",
+            "port_connection": {
+                "Neg": "GND",
+                "Pos": "floating_resistor2_8_Pos"
+            }
+        },
+        {
+            "component_type": "Res",
+            "port_connection": {
+                "Neg": "GND",
+                "Pos": "floating_resistor2_9_Pos"
+            }
+        },
+        {
+            "component_type": "Res",
+            "port_connection": {
+                "Neg": "GND",
+                "Pos": "floating_resistor2_10_Pos"
+            }
+        },
+        {
+            "component_type": "Res",
+            "port_connection": {
+                "Pos": "b",
+                "Neg": "b"
+            }
+        }
+    ],
+    "ckt_type": ""
+}
