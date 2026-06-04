@@ -1,0 +1,35 @@
+{
+    "ckt_netlist": [
+        {
+            "component_type": "Diso_amp",
+            "port_connection": {
+                "InN": "b",
+                "Out": "c",
+                "InP": "d"
+            }
+        },
+        {
+            "component_type": "Current",
+            "port_connection": {
+                "In": "GND",
+                "Out": "d"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Drain": "a",
+                "Gate": "b",
+                "Source": "d"
+            }
+        },
+        {
+            "component_type": "Cap",
+            "port_connection": {
+                "Pos": "GND",
+                "Neg": "d"
+            }
+        }
+    ],
+    "ckt_type": ""
+}

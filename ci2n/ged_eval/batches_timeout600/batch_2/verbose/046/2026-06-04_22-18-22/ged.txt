@@ -1,0 +1,22 @@
+GED: 53		at time: 0.019/600s
+GED: 51		at time: 0.027/600s
+GED: 50		at time: 0.087/600s
+GED: 49		at time: 0.088/600s
+GED: 48		at time: 1.123/600s
+GED: 47		at time: 1.231/600s
+GED: 46		at time: 1.232/600s
+GED: 45		at time: 18.088/600s
+GED: 44		at time: 18.089/600s
+GED: 42		at time: 18.092/600s
+GED: 41		at time: 18.120/600s
+GED: 40		at time: 18.121/600s
+GED: 39		at time: 18.367/600s
+GED: 38		at time: 18.505/600s
+GED: 37		at time: 18.506/600s
+GED: 36		at time: 24.103/600s
+GED: 35		at time: 35.092/600s
+GED: 34		at time: 35.226/600s
+GED: 33		at time: 35.227/600s
+GED: 32		at time: 37.264/600s
+GED: 31		at time: 207.288/600s
+GED_Result: 31

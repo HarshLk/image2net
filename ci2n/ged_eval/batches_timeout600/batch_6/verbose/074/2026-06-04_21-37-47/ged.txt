@@ -1,0 +1,20 @@
+GED: 85		at time: 0.025/600s
+GED: 84		at time: 0.033/600s
+GED: 83		at time: 0.035/600s
+GED: 81		at time: 0.083/600s
+GED: 80		at time: 0.381/600s
+GED: 79		at time: 0.535/600s
+GED: 77		at time: 0.596/600s
+GED: 76		at time: 0.721/600s
+GED: 75		at time: 0.837/600s
+GED: 73		at time: 3.328/600s
+GED: 72		at time: 5.047/600s
+GED: 71		at time: 5.054/600s
+GED: 70		at time: 8.437/600s
+GED: 69		at time: 20.952/600s
+GED: 68		at time: 37.006/600s
+GED: 67		at time: 53.770/600s
+GED: 66		at time: 146.892/600s
+GED: 65		at time: 185.594/600s
+GED: 64		at time: 414.498/600s
+GED_Result: 64

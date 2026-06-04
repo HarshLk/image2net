@@ -1,0 +1,16 @@
+GED: 158		at time: 0.037/600s
+GED: 156		at time: 0.040/600s
+GED: 154		at time: 0.041/600s
+GED: 153		at time: 0.054/600s
+GED: 152		at time: 0.091/600s
+GED: 151		at time: 0.145/600s
+GED: 149		at time: 0.198/600s
+GED: 148		at time: 0.201/600s
+GED: 147		at time: 0.207/600s
+GED: 146		at time: 0.251/600s
+GED: 145		at time: 6.773/600s
+GED: 144		at time: 8.373/600s
+GED: 143		at time: 17.224/600s
+GED: 142		at time: 101.081/600s
+GED: 141		at time: 101.756/600s
+GED_Result: 141

@@ -1,0 +1,3 @@
+GED: 15		at time: 0.013/600s
+GED: 13		at time: 0.016/600s
+GED_Result: 13

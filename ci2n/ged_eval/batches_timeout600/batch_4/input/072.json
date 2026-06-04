@@ -1,0 +1,69 @@
+{
+    "ckt_netlist": [
+        {
+            "component_type": "PNP",
+            "port_connection": {
+                "Emitter": "c",
+                "Base": "g",
+                "Collector": "i"
+            }
+        },
+        {
+            "component_type": "PNP",
+            "port_connection": {
+                "Emitter": "a",
+                "Base": "c",
+                "Collector": "i"
+            }
+        },
+        {
+            "component_type": "NPN",
+            "port_connection": {
+                "Collector": "c",
+                "Base": "d",
+                "Emitter": "e"
+            }
+        },
+        {
+            "component_type": "PNP",
+            "port_connection": {
+                "Emitter": "f",
+                "Base": "g",
+                "Collector": "i"
+            }
+        },
+        {
+            "component_type": "PNP",
+            "port_connection": {
+                "Emitter": "GND",
+                "Base": "f",
+                "Collector": "g"
+            }
+        },
+        {
+            "component_type": "NPN",
+            "port_connection": {
+                "Emitter": "e",
+                "Collector": "f",
+                "Base": "j"
+            }
+        },
+        {
+            "component_type": "NPN",
+            "port_connection": {
+                "Collector": "a",
+                "Base": "e",
+                "Emitter": "h"
+            }
+        },
+        {
+            "component_type": "NPN",
+            "port_connection": {
+                "Base": "b",
+                "Collector": "e",
+                "Emitter": "h"
+            }
+        }
+    ],
+    "ckt_type": ""
+}

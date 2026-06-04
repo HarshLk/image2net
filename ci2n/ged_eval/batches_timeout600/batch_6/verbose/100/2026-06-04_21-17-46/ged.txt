@@ -1,0 +1,5 @@
+GED: 25		at time: 0.014/600s
+GED: 21		at time: 0.015/600s
+GED: 20		at time: 0.017/600s
+GED: 19		at time: 0.035/600s
+GED_Result: 19

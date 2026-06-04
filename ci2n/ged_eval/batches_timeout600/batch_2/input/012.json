@@ -1,0 +1,41 @@
+{
+    "ckt_netlist": [
+        {
+            "component_type": "Diso_amp",
+            "port_connection": {
+                "InN": "GND",
+                "Out": "a",
+                "InP": "a"
+            }
+        },
+        {
+            "component_type": "Res",
+            "port_connection": {
+                "Neg": "a",
+                "Pos": "floating_resistor2_1_Pos"
+            }
+        },
+        {
+            "component_type": "Res",
+            "port_connection": {
+                "Neg": "GND",
+                "Pos": "floating_resistor2_2_Pos"
+            }
+        },
+        {
+            "component_type": "Res",
+            "port_connection": {
+                "Pos": "a",
+                "Neg": "floating_resistor2_3_Neg"
+            }
+        },
+        {
+            "component_type": "Res",
+            "port_connection": {
+                "Neg": "GND",
+                "Pos": "floating_resistor2_5_Pos"
+            }
+        }
+    ],
+    "ckt_type": ""
+}

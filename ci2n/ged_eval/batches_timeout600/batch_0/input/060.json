@@ -1,0 +1,77 @@
+{
+    "ckt_netlist": [
+        {
+            "component_type": "PNP",
+            "port_connection": {
+                "Collector": "a",
+                "Emitter": "f",
+                "Base": "g"
+            }
+        },
+        {
+            "component_type": "PNP",
+            "port_connection": {
+                "Collector": "a",
+                "Emitter": "e",
+                "Base": "g"
+            }
+        },
+        {
+            "component_type": "NPN",
+            "port_connection": {
+                "Collector": "f",
+                "Emitter": "h",
+                "Base": "i"
+            }
+        },
+        {
+            "component_type": "PNP",
+            "port_connection": {
+                "Collector": "a",
+                "Emitter": "b",
+                "Base": "e"
+            }
+        },
+        {
+            "component_type": "NPN",
+            "port_connection": {
+                "Base": "c",
+                "Collector": "e",
+                "Emitter": "h"
+            }
+        },
+        {
+            "component_type": "PNP",
+            "port_connection": {
+                "Emitter": "GND",
+                "Base": "f",
+                "Collector": "g"
+            }
+        },
+        {
+            "component_type": "NPN",
+            "port_connection": {
+                "Base": "GND",
+                "Collector": "GND",
+                "Emitter": "floating_npn_6_Emitter"
+            }
+        },
+        {
+            "component_type": "NPN",
+            "port_connection": {
+                "Emitter": "d",
+                "Base": "GND",
+                "Collector": "h"
+            }
+        },
+        {
+            "component_type": "NPN",
+            "port_connection": {
+                "Collector": "b",
+                "Emitter": "d",
+                "Base": "d"
+            }
+        }
+    ],
+    "ckt_type": ""
+}

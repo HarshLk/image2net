@@ -1,0 +1,37 @@
+{
+    "ckt_netlist": [
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Drain": "a",
+                "Source": "b",
+                "Gate": "b"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Source": "a",
+                "Gate": "b",
+                "Drain": "c"
+            }
+        },
+        {
+            "component_type": "NPN",
+            "port_connection": {
+                "Emitter": "GND",
+                "Collector": "b",
+                "Base": "c"
+            }
+        },
+        {
+            "component_type": "NPN",
+            "port_connection": {
+                "Emitter": "GND",
+                "Collector": "c",
+                "Base": "c"
+            }
+        }
+    ],
+    "ckt_type": ""
+}

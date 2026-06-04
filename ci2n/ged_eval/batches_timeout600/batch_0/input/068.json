@@ -1,0 +1,29 @@
+{
+    "ckt_netlist": [
+        {
+            "component_type": "Diso_amp",
+            "port_connection": {
+                "InN": "a",
+                "Out": "a",
+                "InP": "a"
+            }
+        },
+        {
+            "component_type": "PNP",
+            "port_connection": {
+                "Emitter": "GND",
+                "Base": "GND",
+                "Collector": "a"
+            }
+        },
+        {
+            "component_type": "PNP",
+            "port_connection": {
+                "Base": "GND",
+                "Emitter": "GND",
+                "Collector": "a"
+            }
+        }
+    ],
+    "ckt_type": ""
+}

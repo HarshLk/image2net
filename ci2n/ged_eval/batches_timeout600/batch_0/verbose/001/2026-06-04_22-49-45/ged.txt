@@ -1,0 +1,13 @@
+GED: 50		at time: 0.020/600s
+GED: 48		at time: 0.020/600s
+GED: 46		at time: 0.037/600s
+GED: 45		at time: 0.276/600s
+GED: 43		at time: 0.292/600s
+GED: 41		at time: 0.670/600s
+GED: 39		at time: 1.068/600s
+GED: 35		at time: 1.129/600s
+GED: 33		at time: 5.476/600s
+GED: 32		at time: 6.235/600s
+GED: 31		at time: 364.544/600s
+GED: 29		at time: 365.500/600s
+GED_Result: 29

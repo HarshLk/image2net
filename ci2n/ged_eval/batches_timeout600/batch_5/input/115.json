@@ -1,0 +1,51 @@
+{
+    "ckt_netlist": [
+        {
+            "component_type": "Diso_amp",
+            "port_connection": {
+                "InP": "e",
+                "Out": "GND",
+                "InN": "floating_single_end_amp_0_InN"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Gate": "a",
+                "Drain": "b",
+                "Source": "floating_pmos_1_Source"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Drain": "a",
+                "Gate": "e",
+                "Source": "GND"
+            }
+        },
+        {
+            "component_type": "PMOS",
+            "port_connection": {
+                "Drain": "c",
+                "Source": "d",
+                "Gate": "e"
+            }
+        },
+        {
+            "component_type": "Diode",
+            "port_connection": {
+                "Out": "GND",
+                "In": "floating_diode_4_In"
+            }
+        },
+        {
+            "component_type": "Diode",
+            "port_connection": {
+                "In": "c",
+                "Out": "GND"
+            }
+        }
+    ],
+    "ckt_type": ""
+}

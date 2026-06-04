@@ -1,0 +1,43 @@
+{
+    "ckt_netlist": [
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Drain": "a",
+                "Gate": "c",
+                "Source": "e"
+            }
+        },
+        {
+            "component_type": "Current",
+            "port_connection": {
+                "In": "a",
+                "Out": "floating_current_1_Out"
+            }
+        },
+        {
+            "component_type": "Diso_amp",
+            "port_connection": {
+                "InN": "c",
+                "Out": "d",
+                "InP": "e"
+            }
+        },
+        {
+            "component_type": "Cap",
+            "port_connection": {
+                "Pos": "GND",
+                "Neg": "a"
+            }
+        },
+        {
+            "component_type": "NMOS",
+            "port_connection": {
+                "Gate": "b",
+                "Source": "GND",
+                "Drain": "e"
+            }
+        }
+    ],
+    "ckt_type": ""
+}

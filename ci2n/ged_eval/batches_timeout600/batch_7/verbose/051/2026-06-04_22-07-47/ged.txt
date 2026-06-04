@@ -1,0 +1,7 @@
+GED: 133		at time: 0.044/600s
+GED: 132		at time: 0.380/600s
+GED: 131		at time: 0.394/600s
+GED: 130		at time: 56.347/600s
+GED: 129		at time: 56.361/600s
+GED: 128		at time: 267.275/600s
+GED_Result: 128

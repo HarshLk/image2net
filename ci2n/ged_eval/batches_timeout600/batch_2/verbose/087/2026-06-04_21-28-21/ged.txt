@@ -1,0 +1,6 @@
+GED: 160		at time: 0.040/600s
+GED: 156		at time: 0.042/600s
+GED: 155		at time: 0.045/600s
+GED: 154		at time: 0.047/600s
+GED: 153		at time: 42.635/600s
+GED_Result: 153

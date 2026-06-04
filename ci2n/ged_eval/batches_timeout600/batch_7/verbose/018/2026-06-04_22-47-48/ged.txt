@@ -1,0 +1,7 @@
+GED: 80		at time: 0.024/600s
+GED: 75		at time: 0.773/600s
+GED: 74		at time: 0.906/600s
+GED: 73		at time: 0.921/600s
+GED: 71		at time: 4.173/600s
+GED: 70		at time: 4.239/600s
+GED_Result: 70
